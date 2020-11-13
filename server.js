@@ -17,4 +17,6 @@ app.get("/", (req, res) => {
   res.render("index", { articles: articles });
 });
 
-app.listen(5000);
+const port = process.env.PORT || 3000;
+
+app.listen(port);
